@@ -1,10 +1,10 @@
 echo -e "\e[35mInstalling nginx server\e[0m"
 yum install nginx -y &>>/tmp/roboshop.log
 
-echo -e "\e[33mRemoving app content\e[0m"
+echo -e "\e[35mRemoving app content\e[0m"
 rm -rf /usr/share/nginx/html/* &>>/tmp/roboshop.log
 
-echo -e "\e[33mDownloading frontend content\e[0m"
+echo -e "\e[35mDownloading frontend content\e[0m"
 curl -o /tmp/frontend.zip https://roboshop-artifacts.s3.amazonaws.com/frontend.zip &>>/tmp/roboshop.log
 
 echo -e "\e[33mExtracting frontend content\e[0m"
