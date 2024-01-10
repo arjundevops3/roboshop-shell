@@ -33,7 +33,7 @@ systemctl restart catalogue &>>/tmp/roboshop.log
 
 
 echo -e "\e[35mCopy mongodb repo file\e[0m"
-cp /home/centos/roboshop-shell/mongodb.repo /etc/yum.repos.d/mongodb.repo
+cp /home/centos/roboshop-shell/mongodb.repo /etc/yum.repos.d/mongodb.repo &>>/tmp/roboshop.log
 
 
 echo -e "\e[35mInstalling mongodb client\e[0m"
