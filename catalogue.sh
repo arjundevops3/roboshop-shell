@@ -40,4 +40,4 @@ echo -e "\e[35mInstalling mongodb client\e[0m"
 yum install mongodb-org-shell -y &>>/tmp/roboshop.log
 
 echo -e "\e[35mLoad schema\e[0m"
-mongo --host mongodb-dev.arjundevops73.shop </app/schema/catalogue.js &>>/tmp/roboshop.log
+mongo --host mongodb-dev.arjund73.shop </app/schema/catalogue.js &>>/tmp/roboshop.log
