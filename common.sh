@@ -73,10 +73,25 @@ maven() {
   yum install maven -y &>>$log_file
 
   app_presetup
-  mysql_schema_setup
+
   echo -e "${color}Download maven dependencies${nocolor}"
   mvn clean package &>>$log_file
   mv target/shipping-1.0.jar shipping.jar &>>$log_file
+
+  mysql_schema_setup
+
+  systemd_setup
+}
+
+python() {
+  echo -e "${color}Install python${nocolor}"
+  yum install python36 gcc python3-devel -y &>>$log_file
+
+  app_presetup
+
+  echo -e "${color}Install application dependencies${nocolor}"
+  cd /app
+  pip3.6 install -r requirements.txt &>>$log_file
 
   systemd_setup
 }
