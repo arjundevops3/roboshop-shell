@@ -28,7 +28,7 @@ mysql -h mysql-dev.arjund73.shop -uroot -pRoboShop@1 < /app/schema/shipping.sql 
 
 
 echo -e "\e[35m Load schema\e[0m"
-cp /home/centos/roboshop-shell/shipping.service /etc/yum.repos.d/shipping.service &>>/tmp/roboshop.log
+cp /home/centos/roboshop-shell/shipping.service /etc/systemd/system/shipping.service &>>/tmp/roboshop.log
 
 echo -e "\e[35mStart shipping service\e[0m"
 systemctl daemon-reload &>>/tmp/roboshop.log
