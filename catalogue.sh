@@ -1,4 +1,4 @@
-component=$component
+component=catalogue
 color="\e[35m"
 nocolor=""\e[0m"
 
