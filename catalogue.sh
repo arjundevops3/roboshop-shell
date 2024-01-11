@@ -1,5 +1,5 @@
 component=$component
-color="${color}"
+color="\e[35m"
 nocolor=""\e[0m"
 
 echo -e "${color}Congiguring nodejs repos${nocolor}"
