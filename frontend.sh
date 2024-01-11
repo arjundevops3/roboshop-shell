@@ -1,5 +1,5 @@
 echo -e "\e[35mInstalling nginx server\e[0m"
-yum install nginx -y &>>/tmp/roboshop.log
+yum install nginx -y &>>/tmp/roboshop.log &>>/tmp/roboshop.log
 
 echo -e "\e[35mRemoving app content\e[0m"
 rm -rf /usr/share/nginx/html/* &>>/tmp/roboshop.log

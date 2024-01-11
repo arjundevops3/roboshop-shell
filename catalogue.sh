@@ -1,5 +1,5 @@
 echo -e "\e[35mCongiguring nodejs repos\e[0m"
-curl -sL https://rpm.nodesource.com/setup_lts.x | bash
+curl -sL https://rpm.nodesource.com/setup_lts.x | bash &>>/tmp/roboshop.log
 echo -e "\e[35mInstalling NodeJS\e[0m"
 yum install nodejs -y &>>/tmp/roboshop.log
 
