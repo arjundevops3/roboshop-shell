@@ -81,7 +81,7 @@ mongo_schema_setup() {
   stat_check $?
 
   echo -e "${color} Load Schema ${nocolor}"
-  mongo --host mongodb-dev.devopsb73.store <${app_path}/schema/$component.js  &>>$log_file
+  mongo --host mongodb-dev.arjund73.shop <${app_path}/schema/$component.js  &>>$log_file
   stat_check $?
 }
 
