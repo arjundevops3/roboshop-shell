@@ -1,3 +1,5 @@
+source common.sh
+
 echo -e "\e[34m Disable mysql default password\e[0m"
 yum module disable mysql -y &>>/tmp/roboshop.log
 stat_check $?
