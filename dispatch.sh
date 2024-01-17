@@ -1,3 +1,5 @@
+source common.sh
+
 echo -e "\e[35mInstalling golang \e[0m"
 yum install golang -y &>>/tmp/roboshop.log
 stat_check $?
