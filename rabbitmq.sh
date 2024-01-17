@@ -1,3 +1,5 @@
+source common.sh
+
 echo -e "${color}configure Erlang repos${nocolor}"
 curl -s https://packagecloud.io/install/repositories/rabbitmq/erlang/script.rpm.sh | bash &>>/tmp/roboshop.log
 stat_check $?
